@@ -1,0 +1,74 @@
+/* contact.css */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Rubik', sans-serif;
+    background-color: var(--bg-color); /* Ensure background color matches your theme */
+}
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 32px 10%;
+    background: transparent;
+    transition: all ease .45s;
+}
+
+.contact-container {
+    margin-top: 120px; /* Space below the navbar */
+    padding: 20px;
+    display: flex;
+    justify-content: flex-start; /* Align items to the left */
+    align-items: flex-start;
+}
+
+.contact-left {
+    width: 100%;
+    max-width: 600px; /* Adjust width as needed */
+    margin-left: 0; /* Align left */
+}
+
+.contact-left-title {
+    margin-bottom: 20px;
+}
+
+.contact-left-title h2 {
+    font-size: 2rem;
+    color: var(--text-color);
+}
+
+.contact-left-title hr {
+    border: 1px solid var(--main-color);
+    width: 50px;
+    margin: 10px 0;
+}
+
+.contact-inputs {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+button {
+    background-color: var(--main-color);
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #e89d00; /* Adjust hover color if needed */
+}
