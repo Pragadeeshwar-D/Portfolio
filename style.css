@@ -180,55 +180,90 @@ header {
 .social i:hover{
     transform: translateY(-10px);
 }
-@media(max-width : 1370px)
-{
-    header{
-        padding: 15px 4%;
-        transition: .2s;
-    }
-    section{
-        padding: 0 4%;
-        transition: .2s;
 
-    }
-    .share{
-        left: 4%;
-        transition: .2s;
-    }
-
-}
-@media(max-width : 1850px)
-{
-    header{
-        padding: 15px 8%;
-        transition: .2s;
-    }
-    section{
-        padding: 0 8%;
-        transition: .2s;
-
-    }
-    .share{
-        left: 8%;
-        transition: .2s;
-
-    }
-    :root{
-        --big-font : 5.5rem;
-        --p-font : 1rem;
-        transition:  .2s;
-    }
-}
-@media(max-width : 1020px)
-{
-    .navbar a{
-        margin: 0 15px;
-
-    }
-    :root{
-        --big-font : 5rem;
-        --p-font : 1rem;
-        transition: .2s;
-    }
+/* Default Navbar Styles (Visible on larger screens) */
+.navbar {
+    display: flex;
 }
 
+/* Menu Button Styles (Hidden on larger screens) */
+.menu-btn {
+    display: none;
+}
+
+/* Default Styles (Visible on larger screens) */
+.navbar {
+    display: flex;
+    margin-left: auto;
+    margin-right: 20px;
+}
+
+.navbar li {
+    margin: 0 15px;
+}
+
+.navbar a {
+    font-size: var(--p-font);
+    font-weight: 500;
+    color: var(--text-color);
+    transition: color .3s;
+}
+
+.navbar a:hover {
+    color: var(--main-color);
+}
+
+.navbar a.active {
+    color: var(--main-color);
+}
+
+/* Menu Button Styles (Hidden on larger screens) */
+.menu-btn {
+    display: none;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+    .navbar {
+        display: none; /* Hide navbar by default on small screens */
+        flex-direction: column;
+        position: absolute;
+        top: 60px; /* Adjust based on header height */
+        right: 0;
+        width: 100%;
+        background-color: var(--bg-color);
+        z-index: 1000;
+        padding: 10px;
+    }
+
+    .menu-btn {
+        display: flex;
+        background: linear-gradient(130.08deg, #383528 0%, #191919 100%);
+        box-shadow: 0px 20px 40px #00000070;
+        border: 1px solid #3b3b3b;
+        padding: 10px 20px;
+        border-radius: 100px;
+        align-items: center;
+        cursor: pointer;
+        margin-left: auto;
+    }
+
+    #menu-icon {
+        font-size: 28px;
+        margin-left: 10px;
+    }
+
+    .navbar.active {
+        display: flex; /* Show navbar when active */
+    }
+
+    .navbar li {
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    .navbar a {
+        font-size: 1.2rem;
+        padding: 10px 0;
+    }
+}

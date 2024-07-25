@@ -1,5 +1,4 @@
-
-
+/* Default Styles (for larger screens) */
 .about {
     background-color: var(--bg-color);
     color: var(--text-color);
@@ -43,6 +42,40 @@
     height: auto;
     border-radius: 10px;
 }
-h2{
+
+h2 {
     color: #ffae00;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+    .about-content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .about-text {
+        max-width: 100%;
+        margin-bottom: 20px;
+        margin-top: 30px;
+    }
+
+    .about-text h2 {
+        font-size: 2rem;
+        margin-top: 90px;
+    }
+
+    .about-text p {
+        font-size: 1rem;
+    }
+
+    .about-img {
+        max-width: 70%;
+    }
+
+    .about-img img {
+        max-width: 100%;
+        height: auto;
+    }
 }

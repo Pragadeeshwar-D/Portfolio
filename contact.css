@@ -21,7 +21,8 @@ header {
 }
 
 .contact-container {
-    margin-top: 120px; /* Space below the navbar */
+    margin-top: 190px; /* Space below the navbar */
+    margin-left: 200px;
     padding: 20px;
     display: flex;
     justify-content: flex-start; /* Align items to the left */
@@ -71,4 +72,40 @@ button {
 
 button:hover {
     background-color: #e89d00; /* Adjust hover color if needed */
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+    header {
+        padding: 20px 5%;
+    }
+
+    .contact-container {
+        margin-top: 160px; /* Adjust as needed */
+        margin-left: 0;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-left {
+        max-width: 100%;
+        margin-left: 0;
+    }
+
+    .contact-left-title h2 {
+        font-size: 1.5rem;
+    }
+
+    .contact-left-title hr {
+        width: 30px;
+    }
+
+    .contact-inputs {
+        font-size: 0.9rem;
+    }
+
+    button {
+        font-size: 0.9rem;
+        padding: 8px 16px;
+    }
 }
