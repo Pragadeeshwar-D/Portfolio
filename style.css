@@ -178,20 +178,17 @@ header {
     transition: all 0.6s ease-in-out;
 }
 .social i:hover{
-    transform: translateY(-10px);
+    /* transform: translateY(-10px); */
 }
 
-/* Default Navbar Styles (Visible on larger screens) */
 .navbar {
     display: flex;
 }
 
-/* Menu Button Styles (Hidden on larger screens) */
 .menu-btn {
     display: none;
 }
 
-/* Default Styles (Visible on larger screens) */
 .navbar {
     display: flex;
     margin-left: auto;
@@ -217,18 +214,17 @@ header {
     color: var(--main-color);
 }
 
-/* Menu Button Styles (Hidden on larger screens) */
+
 .menu-btn {
     display: none;
 }
 
-/* Mobile Styles */
 @media (max-width: 768px) {
     .navbar {
-        display: none; /* Hide navbar by default on small screens */
+        display: none;
         flex-direction: column;
         position: absolute;
-        top: 60px; /* Adjust based on header height */
+        top: 60px; 
         right: 0;
         width: 100%;
         background-color: var(--bg-color);
@@ -254,7 +250,7 @@ header {
     }
 
     .navbar.active {
-        display: flex; /* Show navbar when active */
+        display: flex; 
     }
 
     .navbar li {

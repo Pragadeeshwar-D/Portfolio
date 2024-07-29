@@ -53,7 +53,7 @@
     transition: width 0.5s ease;
 }
 
-/* Mobile Styles */
+
 @media (max-width: 768px) {
     .skills {
         padding: 40px 5%;
